@@ -3,11 +3,12 @@
 // import pangram from './detectPangram';
 
 
-const pangram = (sentence) => {
+const isPangram = (string) => {
+  const sentence = string.toLowerCase().split('');
   const alphabet = 'abcdefghijklmnopqrstuvwxyz';
-  const theSentence = sentence;
+
   for (let i = 0; i < alphabet.length; i += 1) {
-    if (theSentence.indexOf(alphabet[i]) === -1) {
+    if (sentence.indexOf(alphabet[i]) === -1) {
       return false;
     }
   }
@@ -22,7 +23,7 @@ document.querySelector('#btn').onclick = () => {
   // eslint-disable-next-line no-console
   console.log(inputValue);
 
-  if (pangram(inputValue)) {
+  if (isPangram(inputValue)) {
     const innerText = document.createTextNode('Pangram');
     result.appendChild(innerText);
     element.appendChild(result);
