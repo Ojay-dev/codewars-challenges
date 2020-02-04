@@ -12,7 +12,7 @@ const pangram = (sentence) => {
     }
   }
   return true;
-}
+};
 
 
 document.querySelector('#btn').onclick = () => {
@@ -31,5 +31,4 @@ document.querySelector('#btn').onclick = () => {
     result.appendChild(innerText);
     element.appendChild(result);
   }
-
-}
+};
