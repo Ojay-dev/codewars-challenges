@@ -4,7 +4,8 @@
   "description": "",
   "main": "detectPangram.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +13,11 @@
   "devDependencies": {
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-plugin-import": "^2.20.1"
+    "eslint-plugin-import": "^2.20.1",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.2"
   }
 }
